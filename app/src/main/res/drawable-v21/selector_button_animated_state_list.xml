@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/pressed"
+          android:state_pressed="true"
+          android:drawable="@drawable/ic_done_black_36dp"/>
+
+    <item android:id="@+id/released"
+        android:drawable="@drawable/ic_open_in_browser_black_36dp"/>
+
+    <transition
+        android:fromId="@id/released"
+        android:toId="@id/pressed">
+        <animation-list>
+            <item android:duration="30" android:drawable="@drawable/ic_cached_black_36dp"/>
+            <item android:duration="30" android:drawable="@drawable/ic_backup_black_36dp"/>
+        </animation-list>
+    </transition>
+</animated-selector>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="state list animator"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:stateListAnimator="@drawable/selector_button_animator"
+        android:background="@color/sea"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:clickable="true"/>
+
+    <Button
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/selector_button_animated_state_list"
+        android:layout_marginTop="20dp"
+        android:text="animated_state_list_drawable"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/tv_circular"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:background="@color/blue_sky"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="circular reveal"
+        android:clickable="true" />
+
+    <ImageView
+        android:id="@+id/iv_small"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/day"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center_horizontal"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:text="shared element transition"/>
+
+</LinearLayout>
